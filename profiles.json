@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "firstName": "Aditi",
+    "lastName": "Tomar",
+    "age": 24,
+    "ethnicity": "Indian",
+    "gender": "FEMALE",
+    "bio": "Software Programmer who loves coding and solving complex problems. Enjoys hiking and dislikes crowded places.",
+    "imageUrl": "1.png",
+    "myersBriggsPersonalityType": "INTP"
+  },
+  {
+    "id": "2",
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "age": 28,
+    "ethnicity": "Indian",
+    "gender": "FEMALE",
+    "bio": "Graphic Designer passionate about art and creativity. Likes painting and dislikes loud noises.",
+    "imageUrl": "2.png",
+    "myersBriggsPersonalityType": "ENFP"
+  },
+  {
+    "id": "3",
+    "firstName": "Anita",
+    "lastName": "Kumari",
+    "age": 30,
+    "ethnicity": "Indian",
+    "gender": "FEMALE",
+    "bio": "Data Scientist who enjoys analyzing data and discovering patterns. Loves reading and dislikes clutter.",
+    "imageUrl": "3.png",
+    "myersBriggsPersonalityType": "ISTJ"
+  },
+  {
+    "id": "4",
+    "firstName": "Sophia",
+    "lastName": "Brown",
+    "age": 22,
+    "ethnicity": "Caucasian",
+    "gender": "FEMALE",
+    "bio": "Marketing Specialist interested in consumer behavior. Enjoys yoga and dislikes early mornings.",
+    "imageUrl": "4.png",
+    "myersBriggsPersonalityType": "ESFJ"
+  },
+  {
+    "id": "5",
+    "firstName": "Emily",
+    "lastName": "Smith",
+    "age": 27,
+    "ethnicity": "Caucasian",
+    "gender": "FEMALE",
+    "bio": "Mechanical Engineer who loves building machines. Likes tinkering with gadgets and dislikes inefficiency.",
+    "imageUrl": "5.png",
+    "myersBriggsPersonalityType": "ENTJ"
+  },
+  {
+    "id": "6",
+    "firstName": "Ava",
+    "lastName": "Johnson",
+    "age": 26,
+    "ethnicity": "Caucasian",
+    "gender": "FEMALE",
+    "bio": "Product Manager focused on innovation and strategy. Enjoys traveling and dislikes routine tasks.",
+    "imageUrl": "6.png",
+    "myersBriggsPersonalityType": "INFJ"
+  },
+  {
+    "id": "7",
+    "firstName": "Isabella",
+    "lastName": "Garcia",
+    "age": 25,
+    "ethnicity": "Latina",
+    "gender": "FEMALE",
+    "bio": "UX Designer who creates intuitive user experiences. Likes sketching and dislikes poorly designed interfaces.",
+    "imageUrl": "7.png",
+    "myersBriggsPersonalityType": "INFP"
+  },
+  {
+    "id": "8",
+    "firstName": "Mia",
+    "lastName": "Martinez",
+    "age": 24,
+    "ethnicity": "Latina",
+    "gender": "FEMALE",
+    "bio": "Civil Engineer dedicated to sustainable construction. Enjoys gardening and dislikes pollution.",
+    "imageUrl": "8.png",
+    "myersBriggsPersonalityType": "ESTJ"
+  },
+  {
+    "id": "9",
+    "firstName": "Linh",
+    "lastName": "Nguyen",
+    "age": 23,
+    "ethnicity": "Asian",
+    "gender": "FEMALE",
+    "bio": "Biomedical Researcher fascinated by genetic studies. Loves cooking and dislikes fast food.",
+    "imageUrl": "9.png",
+    "myersBriggsPersonalityType": "ENFJ"
+  },
+  {
+    "id": "10",
+    "firstName": "Chen",
+    "lastName": "Li",
+    "age": 26,
+    "ethnicity": "Asian",
+    "gender": "FEMALE",
+    "bio": "Financial Analyst with a knack for market trends. Enjoys chess and dislikes impulsive decisions.",
+    "imageUrl": "10.png",
+    "myersBriggsPersonalityType": "INTJ"
+  }
+]
