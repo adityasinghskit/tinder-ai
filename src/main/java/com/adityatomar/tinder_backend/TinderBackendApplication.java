@@ -50,6 +50,18 @@ public class TinderBackendApplication implements CommandLineRunner {
 				"Singh",
 				29,
 				"Indian",
+				Gender.FEMALE,
+				"Software Programmer",
+				"foo.png",
+				"INTP"
+		);
+
+		Profile profile3 = new Profile(
+				"3",
+				"Sashi",
+				"Singh",
+				21,
+				"Indian",
 				Gender.MALE,
 				"Software Programmer",
 				"foo.png",
@@ -57,17 +69,26 @@ public class TinderBackendApplication implements CommandLineRunner {
 		);
 		profileRepository.save(profile);
 		profileRepository.save(profile2);
+		profileRepository.save(profile3);
 		profileRepository.findAll().forEach(System.out::println);
 
 		Conversation conversation = new Conversation(
 				UUID.randomUUID().toString(),
-				profile.id(),
+				profile2.id(),
+				List.of(
+						new ChatMessage("Hi", profile.id(), LocalDateTime.now())
+				)
+		);
+		Conversation conversation2 = new Conversation(
+				UUID.randomUUID().toString(),
+				profile3.id(),
 				List.of(
 						new ChatMessage("Hi", profile.id(), LocalDateTime.now())
 				)
 		);
 
 		conversationRepository.save(conversation);
+		conversationRepository.save(conversation2);
 		conversationRepository.findAll().forEach(System.out::println);
 	}
 }
