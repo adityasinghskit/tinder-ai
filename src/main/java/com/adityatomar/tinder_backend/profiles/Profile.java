@@ -5,7 +5,7 @@ public record Profile(
         String firstName,
         String lastName,
         int age,
-        String ethinicity,
+        String ethnicity,
         Gender gender,
         String bio,
         String imageUrl,

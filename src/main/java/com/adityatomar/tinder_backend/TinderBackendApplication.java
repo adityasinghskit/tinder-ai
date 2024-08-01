@@ -5,6 +5,7 @@ import com.adityatomar.tinder_backend.conversations.Conversation;
 import com.adityatomar.tinder_backend.conversations.ConversationRepository;
 import com.adityatomar.tinder_backend.profiles.Gender;
 import com.adityatomar.tinder_backend.profiles.Profile;
+import com.adityatomar.tinder_backend.profiles.ProfileService;
 import com.adityatomar.tinder_backend.profiles.ProfileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @SpringBootApplication
@@ -23,6 +25,9 @@ public class TinderBackendApplication implements CommandLineRunner {
 	@Autowired
 	private ConversationRepository conversationRepository;
 
+	@Autowired
+	private ProfileService profileService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(TinderBackendApplication.class, args);
 	}
@@ -32,44 +37,10 @@ public class TinderBackendApplication implements CommandLineRunner {
 		profileRepository.deleteAll();
 		conversationRepository.deleteAll();
 
-		Profile profile = new Profile(
-				"1",
-				"Aditya",
-				"Tomar",
-				24,
-				"Indian",
-				Gender.MALE,
-				"Software Programmer",
-				"foo.png",
-				"INTP"
-		);
-
-		Profile profile2 = new Profile(
-				"2",
-				"Palki",
-				"Singh",
-				29,
-				"Indian",
-				Gender.FEMALE,
-				"Software Programmer",
-				"foo.png",
-				"INTP"
-		);
-
-		Profile profile3 = new Profile(
-				"3",
-				"Sashi",
-				"Singh",
-				21,
-				"Indian",
-				Gender.MALE,
-				"Software Programmer",
-				"foo.png",
-				"INTP"
-		);
-		profileRepository.save(profile);
-		profileRepository.save(profile2);
-		profileRepository.save(profile3);
+		profileService.loadProfilesFromJson();
+		Profile profile =  profileService.findById("11");
+		Profile profile2 = profileService.findById("2");
+		Profile profile3 = profileService.findById("8");
 		profileRepository.findAll().forEach(System.out::println);
 
 		Conversation conversation = new Conversation(
