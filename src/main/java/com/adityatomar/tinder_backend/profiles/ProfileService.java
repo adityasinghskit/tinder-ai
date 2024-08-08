@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.util.List;
@@ -33,5 +32,13 @@ public class ProfileService {
 
     public Profile findById(String id){
         return profileRepository.findById(id).orElseThrow(()-> new RuntimeException("Profile not found with id: " + id));
+    }
+
+    public Profile getRandomProfile(){
+        Profile randomProfile = profileRepository.getRandomProfile();
+        if(randomProfile.id().equals("user")){
+            return getRandomProfile();
+        }
+        return randomProfile;
     }
 }
