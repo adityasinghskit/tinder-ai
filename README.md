@@ -2,16 +2,14 @@
 
 - **API Endpoints:** Provides endpoints for managing AI profiles and handling user interactions.
 - **MongoDB Integration:** Stores and retrieves data using MongoDB.
-- **Scalable Architecture:** Designed to handle a growing number of requests and data.
 
 ## Technologies Used
 
 - **Spring Boot:** Framework for building the backend application.
 - **MongoDB:** NoSQL database for storing AI profiles and user interactions.
 - **Spring Data MongoDB:** Simplifies MongoDB data access.
-- **Spring Security:** Secures the API endpoints.
 - **Maven:** Build and dependency management tool.
-
+- **Spring ai:** LLama3.1 and GPT model for chat responses
 ## Installation
 
 To set up and run this project locally, follow these steps:
