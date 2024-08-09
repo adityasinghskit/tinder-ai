@@ -1,26 +1,27 @@
-# Tinder AI Frontend
-
-Welcome to the Tinder AI Frontend project! This is a React-based frontend for the Tinder AI application, where users can interact with AI-generated profiles and engage in conversations.
-
 ## Features
 
-- **AI Profiles:** Interact with 10 AI-generated profiles.
-- **Chat Interface:** Engage in conversations with the selected AI profile.
-- **Responsive Design:** Optimized for both desktop and mobile views.
+- **API Endpoints:** Provides endpoints for managing AI profiles and handling user interactions.
+- **MongoDB Integration:** Stores and retrieves data using MongoDB.
+- **Scalable Architecture:** Designed to handle a growing number of requests and data.
 
 ## Technologies Used
 
-- **React:** Frontend framework for building the user interface.
-- **Tailwind CSS:** Styling for the application.
-  
+- **Spring Boot:** Framework for building the backend application.
+- **MongoDB:** NoSQL database for storing AI profiles and user interactions.
+- **Spring Data MongoDB:** Simplifies MongoDB data access.
+- **Spring Security:** Secures the API endpoints.
+- **Maven:** Build and dependency management tool.
+
 ## Installation
 
-To get started with this project, follow these steps:
+To set up and run this project locally, follow these steps:
 
 1. **Clone the repository:**
-   git clone https://github.com/adityasinghskit/tinder-ai-frontend.git
-2. **cd in the repository:**
-   cd tinder-ai-frontend
-3. **npm cmds**
-  npm install
-  npm run dev
+   - git clone https://github.com/adityasinghskit/tinder-ai.git
+   - cd tinder-ai
+2. **Install dependencies:**
+    - mvn clean install
+3. **Configure MongoDB:**
+    - spring.data.mongodb.uri=mongodb://localhost:27017/tinder-ai
+4. **Run the application:**
+    - mvn spring-boot:run
